@@ -64,7 +64,7 @@ To setup video to automatically upload to Youtube I used [tokland](https://githu
 
 
 
-### Installing
+## Installing
 
 A step by step series of examples that tell you have to get a development env running
 
