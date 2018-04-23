@@ -3,17 +3,52 @@
 
 This project uses a Raspberry pi 2 Model B to observe and monitor a Crested Gecko, housed in a custom built vararium. . 
 
-## Getting Started
+## Hardware 
+Raspberry pi 2 Model B v1.1 
 
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+Belkin Wifi adapter  
 
-### Prerequisites
+16GB Micro SD with Raspbian Stretch  
 
-What things you need to install the software and how to install them
+Raspberry pi NoIR infrared camera board v1.3 
 
+4 Channel Relay Module  
+
+12V power supply (for IR LEDs)  
+
+36 Infrared LEDs (ESUMIC® IR Infrared 36 Led Illuminator Board Plate) 
+
+DHT11 Temperature and Humidity sensor.
+
+### Hardware configuration
+
+* Relay control on GPIO.17 (Raspbery pi PIN11) for infrared LED ON/OFF
+* DHT11 Data on GPIO.14 (Raspberry pi PIN08) for Temperature/Humidity logging
+
+
+### Raspberry pi setup
+
+Prepare the pi
 ```
-Give examples
+sudo apt-get update
+sudo apt-get upgrade
 ```
+Installing libraries
+
+* Infrared LED relay control (install/update to latest version)
+```
+sudo apt-get install rpi.gpio
+```
+* Picamera (install/update on Raspbian)
+```
+sudo apt-get install python-picamera python3-picamera
+```
+  or for distros other than Raspbian
+```
+sudo pip install picamera
+```
+
+
 
 ### Installing
 
