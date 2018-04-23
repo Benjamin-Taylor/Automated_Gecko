@@ -33,7 +33,7 @@ Prepare the pi
 sudo apt-get update
 sudo apt-get upgrade
 ```
-Installing libraries
+#### Installing packages
 
 * Infrared LED relay control (install/update to latest version)
 ```
@@ -47,6 +47,15 @@ sudo apt-get install python-picamera python3-picamera
 ```
 sudo pip install picamera
 ```
+* FFMPEG for rendering images to video
+```
+sudo apt-get install ffmpeg
+```
+
+#### Youtube Uploader
+
+To setup video to automatically upload to Youtube I used [tokland](https://github.com/tokland/youtube-upload), and followed the Youtube setup procedure for client secrets.
+
 
 
 
