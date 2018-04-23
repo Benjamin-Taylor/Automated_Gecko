@@ -1,12 +1,17 @@
 
 # Automated vivarium with Raspberry pi
 
-This project uses a Raspberry pi 2 Model B to observe and monitor a Crested Gecko, housed in a custom built vararium. . 
+This project uses a Raspberry pi 2 Model B to observe and monitor a Crested Gecko housed in a custom built varvarium as well as control some environmental parameters.
+* Capture night timelapse images using IR camera and IR LEDs.
+* Automatically render images to video and then upload to Youtube.
+* Record Temperature and Humidity values.
+* Control coloured LED lights
+ 
 
 ## Hardware 
-Raspberry pi 2 Model B v1.1 
+Raspberry pi 2 Model B v1.1
 
-Belkin Wifi adapter  
+Belkin Wifi adapter
 
 16GB Micro SD with Raspbian Stretch  
 
