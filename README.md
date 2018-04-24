@@ -25,12 +25,6 @@ Raspberry pi NoIR infrared camera board v1.3
 
 DHT11 Temperature and Humidity sensor.
 
-### Hardware configuration
-
-* Relay control on GPIO.17 (Raspbery pi PIN11) for infrared LED ON/OFF
-* DHT11 Data on GPIO.14 (Raspberry pi PIN08) for Temperature/Humidity logging
-
-
 ### Raspberry pi setup
 
 Prepare the pi
@@ -60,6 +54,12 @@ sudo apt-get install ffmpeg
 #### Youtube Uploader
 
 To setup video to automatically upload to Youtube I used [tokland](https://github.com/tokland/youtube-upload), and followed the Youtube setup procedure for client secrets.
+
+
+### Hardware configuration
+
+* Relay control on GPIO.17 (Raspbery pi PIN11) for infrared LED ON/OFF
+* DHT11 Data on GPIO.14 (Raspberry pi PIN08) for Temperature/Humidity logging
 
 
 
