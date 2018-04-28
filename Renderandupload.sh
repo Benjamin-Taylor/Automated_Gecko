@@ -1,4 +1,4 @@
-sudo kill $(pgrep -f 'Image_capture.py')
+sudo kill $(pgrep -f 'Image_capture2.py')
 
 a=1
 for i in /home/pi/Gecko_main/image_bin/*.jpg; do
@@ -13,7 +13,7 @@ DATE=$(date +"%Y-%m-%d-%H:%M")
 
 sleep 60s #gives 60s delay, avoids render-upload conflict 
 
-/usr/local/bin/youtube-upload --title=$DATE --client-secrets=/home/pi/Gecko_main/client_secrets.json --credentials-file=/home/pi/.youtube-upload-credentials.json --playlist "Gek_vids" /home/pi/Gecko_main/video_bin/$DATE.mp4 &> ~/Gecko_main/logs/uploadlogs/uploadlog_$DATE.txt
+/usr/local/bin/youtube-upload --title=$DATE --description="Night timelapse of Crested Gecko in custom varvarium. Raspberry pi, NoIR Camera, 4 Channel Relay+36 IR LED Illuminator board"  --client-secrets=/home/pi/Gecko_main/client_secrets.json --credentials-file=/home/pi/.youtube-upload-credentials.json --playlist "Gek_vids" /home/pi/Gecko_main/video_bin/$DATE.mp4 &> ~/Gecko_main/logs/uploadlogs/uploadlog_$DATE.txt
 
 sudo rm /home/pi/Gecko_main/image_bin/*.jpg 
 sudo rm /home/pi/Gecko_main/video_bin/*.mp4
