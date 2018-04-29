@@ -4,7 +4,7 @@
 This project uses a Raspberry pi 2 Model B to observe and monitor a Crested Gecko housed in a custom built varvarium as well as control some environmental parameters.
 * Capture night timelapse images using IR camera and IR LEDs.
 * Automatically render images to video and then upload to Youtube.
-* Record Temperature and Humidity values to mySQL db.
+* Record Temperature and Humidity values.
 * Control coloured LED lights
  
 
@@ -53,7 +53,7 @@ sudo apt-get install ffmpeg
 
 #### Youtube Uploader
 
-To setup video to automatically upload to Youtube I highly recommend [tokland](https://github.com/tokland/youtube-upload), and followed the Youtube setup procedure for client secrets.
+To setup video to automatically upload to Youtube I used [tokland](https://github.com/tokland/youtube-upload), and followed the Youtube setup procedure for client secrets.
 
 
 ### Hardware configuration
