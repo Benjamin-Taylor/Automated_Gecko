@@ -18,13 +18,17 @@ def relay_off():
   GPIO.cleanup()
   print "IR OFF"
 
+
 def take_pic():
-	 sensor = Adafruit_DHT.DHT11
- 	 pin = 14
-  	 humidity, temperature = Adafruit_DHT.read_retry(sensor, pin)
+         sensor1 = Adafruit_DHT.DHT11
+         pin1 = 14
+         humidity1, temperature1 = Adafruit_DHT.read_retry(sensor1, pin1)
+         sensor2 = Adafruit_DHT.DHT11
+         pin2 = 24
+         humidity2, temperature2 = Adafruit_DHT.read_retry(sensor2, pin2)
 	 camera.resolution = (1280, 720)
 	 timestamp = (str(datetime.datetime.now()))
-	 camera.annotate_text = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S') + (' HeatMat={0:0.1f}*C  Humidity={1:0.1f}%'.format(temperature, humidity))
+	 camera.annotate_text = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S') + (' HeatMat={0:0.1f}*C'.format(temperature1)) + (' Ambient={0:0.1f}*C'.format(temperature2))
 	 time.sleep(4)
 	 camera.capture("/home/pi/Gecko_main/image_bin/" + timestamp + ".jpg")
 	 print "Image captured: " + timestamp
